@@ -93,7 +93,7 @@ a { color: inherit; text-decoration: none; }
 .step b { color: var(--color-brand); font-family: var(--font-fraunces),serif; font-size: 42px; font-weight: 500; line-height: 1; }
 .step h3 { margin: 0 0 9px; font-size: 16px; }
 .step p { margin: 0; color: var(--color-ink-soft); font-size: 13px; line-height: 1.6; }
-.final { position: relative; display: flex; align-items: end; justify-content: space-between; gap: 35px; overflow: hidden; margin-top: 100px; padding-block: 72px; border-radius: 24px 24px 0 0; background: var(--color-brand); color: white; }
+.final { position: relative; display: flex; align-items: end; justify-content: space-between; gap: 35px; overflow: hidden; margin: 90px auto 70px; padding: 60px 52px; border-radius: 24px; background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%); color: white; box-shadow: 0 16px 44px rgba(30, 81, 53, 0.16); }
 .final h2 { color: white; font-size: clamp(38px,4vw,58px); }
 .final .eyebrow, .final > div > p:not(.eyebrow) { color: #dce8c3; }
 .final > div > p:not(.eyebrow) { margin: 20px 0 0; font-size: 14px; }
@@ -107,6 +107,9 @@ a { color: inherit; text-decoration: none; }
 .footer p { color: #9cafb0; font-size: 12px; line-height: 1.8; }
 .footer-grid > div:not(:first-child) { display: flex; flex-direction: column; gap: 12px; font-size: 12px; }
 .footer-grid b { margin-bottom: 4px; color: white; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.footer-wa-link { display: inline-flex; align-items: center; gap: 7px; }
+.footer-wa-link svg { color: #25d366; flex-shrink: 0; }
+.footer-wa-link:hover { color: #25d366 !important; }
 .footer-bottom { display: flex; justify-content: space-between; margin-top: 55px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); color: #8fa4a6; font-size: 10px; }
 .mobile-menu, .mobile-cta { display: none; }
 
@@ -143,9 +146,14 @@ a { color: inherit; text-decoration: none; }
   .steps { grid-template-columns: 1fr; gap: 28px; margin-top: 45px; }
   .step, .step:first-child { padding: 25px 0 0; border: 0; border-top: 1px solid #cdd8ca; }
   .step:first-child { padding-top: 0; border-top: 0; }
-  .final { display: block; margin: 70px 20px 0; padding: 50px 26px; }
-  .final-actions { align-items: flex-start; margin-top: 35px; }
-  .final-leaf { right: -35px; }
+  .final { display: block; width: auto; margin: 50px 16px 40px; padding: 38px 22px; border-radius: 20px; box-shadow: 0 12px 32px rgba(30, 81, 53, 0.15); }
+  .final h2 { font-size: clamp(26px, 7.5vw, 34px); letter-spacing: -1px; line-height: 1.15; }
+  .final .eyebrow { margin-bottom: 12px; font-size: 9.5px; }
+  .final > div > p:not(.eyebrow) { margin: 14px 0 0; font-size: 13.5px; line-height: 1.6; }
+  .final-actions { display: flex; flex-direction: column; align-items: stretch; gap: 13px; margin-top: 26px; }
+  .final-actions .button { width: 100%; padding: 14px 20px; font-size: 13.5px; }
+  .final-actions .text-link { justify-content: center; padding: 4px 0; font-size: 13.5px; }
+  .final-leaf { right: -20px; bottom: -20px; opacity: 0.12; pointer-events: none; transform: scale(0.85); }
   .footer { padding-bottom: 95px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
   .footer-grid > div:first-child { grid-column: span 2; }
